@@ -6,12 +6,11 @@ html
 		h1= title
 		h2= message
 		
-		if isLoggedIn
+		if isLoggedIn 
 			h3 You are logged in.
 			form(name='logout',method='POST',action='logout')
 				div
 					input(type='submit',value='Logout')
-
 		else
 			form(name='login',method='POST',action='login')
 				div

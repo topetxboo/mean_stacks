@@ -2,7 +2,6 @@ var express = require('express');
 var morgan = require('morgan');
 var compression = require('compression');
 var bodyParser = require('body-parser');
-var sass = require('node-sass-middleware');
 
 module.exports = function(){
 	var app = express();
